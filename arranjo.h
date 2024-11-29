@@ -2,7 +2,7 @@
 #define ARRANJO_H
 
 #include <iostream>
-#include <stdexcept> // Para std::out_of_range
+#include <stdexcept>
 
 template <class T>
 class Arranjo {
@@ -15,7 +15,7 @@ public:
         tamanho = tam;
         items = new T[tamanho];
         for (int i = 0; i < tamanho; ++i) {
-            items[i] = T(); // Inicializa cada elemento com valor padrão de T
+            items[i] = T();
         }
     }
 

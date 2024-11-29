@@ -1,7 +1,7 @@
 #ifndef FUNCOES_H
 #define FUNCOES_H
 
-#include <cstring> // Para strcmp
+#include <cstring>
 
 namespace funcoes {
 
@@ -22,7 +22,7 @@ namespace funcoes {
         return (a < b) ? a : b;
     }
 
-    // Especialização para const char *
+
     template <>
     const char* maximo<const char*>(const char* a, const char* b) {
         return (std::strcmp(a, b) > 0) ? a : b;
@@ -33,6 +33,6 @@ namespace funcoes {
         return (std::strcmp(a, b) < 0) ? a : b;
     }
 
-} // namespace funcoes
+}
 
 #endif // FUNCOES_H
